@@ -41,11 +41,11 @@ function App() {
 
   return (
     <>
-      <div className="bg-[#1A202C] w-full h-screen flex justify-center items-center flex-col">
-        <h1 className="text-white font-medium text-5xl mb-4">
+      <div className="bg-[#1A202C] w-full h-screen flex justify-center items-center flex-col ">
+        <h1 className="text-white font-medium text-4xl md:text-5xl mb-4">
           Currency Converter
         </h1>
-        <div className="w-[30%] bg-[#171A23] h-[70%] flex flex-col items-center">
+        <div className="w-[70%] md:w-[50%] lg:w-[30%] bg-[#171A23] h-[60%] md:h-[70%] flex flex-col items-center">
           <div className="w-[80%] mt-20">
             {/* Input for amount */}
             <input
@@ -111,14 +111,14 @@ function App() {
             <p className="text-xl">
               {amount} {fromCurrency.toUpperCase()} ={" "}
             </p>
-            <h1 className="text-4xl">
+            <h1 className="text-3xl md:text-4xl">
               {convertedAmount.toFixed(2)} {toCurrency.toUpperCase()}
             </h1>
           </div>
           {/* Convert button */}
           <button
             onClick={convertCurrency}
-            className="bg-[#20232C] px-8 w-[80%] h-12 mt-6 text-white text-center text-2xl rounded-md hover:bg-[#2C313D]"
+            className="bg-[#20232C] px-8 w-[80%] h-12 mt-6 text-white text-center text-xl md:text-2xl rounded-md hover:bg-[#2C313D]"
           >
             Convert {fromCurrency.toUpperCase()} to {toCurrency.toUpperCase()}
           </button>
